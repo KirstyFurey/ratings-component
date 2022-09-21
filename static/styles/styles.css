@@ -4,11 +4,11 @@
 body {
 	background-color: hsl(216, 12%, 8%);
 	font-family: 'Overpass', sans-serif;
-	height: 100vh;
 }
 
 p {
 	font-size: 15px;
+	margin: unset;
 }
 
 button {
@@ -22,10 +22,10 @@ button {
 }
 
 .ratings-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column; /*remove this once ready to launch*/
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .content-contain {
@@ -35,13 +35,26 @@ button {
 	width: 350px;
 }
 
+.star {
+	background-color:  hsl(213, 19%, 22%);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
 .title {
 	color: white;
+	font-size: 25px;
+	margin: unset;
 }
 
 .statement {
 	color: hsl(217, 12%, 63%);
 	line-height: 22px;
+	margin: 10px 0px;
 }
 
 .rating-numbers {
@@ -51,13 +64,24 @@ button {
 
 .numbers {
 	background-color:  hsl(213, 19%, 22%);
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
-	line-height: 60px;
+	line-height: 50px;
 	text-align: center;
 	color: hsl(217, 12%, 63%);
 	margin: 20px 0px;
+	cursor: pointer;
+}
+
+.numbers:hover {
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+}
+
+.active {
+	background-color:  hsl(217, 12%, 63%);
+	color: white;
 }
 
 .submit {
@@ -70,14 +94,35 @@ button {
 	margin: 20px 0px 10px 0px;
 	letter-spacing: 0.2em;
 	font-weight: 700;
+	cursor: pointer;
 }
-/*
-.thanks {
+
+.submit:hover {
+	background-color: white;
+	color: hsl(25, 97%, 53%);
+}
+
+.thanks-contain {
 	display: none;
 }
-*/
+
+.thanks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .you-selected {
 	color: hsl(25, 97%, 53%);
+	background-color: hsl(213, 19%, 22%);
+	border-radius: 15px;
+    padding: 7px 20px 5px 20px;
+	margin: 25px 0px;
+}
+
+.ta-state {
+	text-align: center;
 }
 
 footer {
@@ -86,9 +131,11 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-	color: hsl(217, 12%, 63%)
+	color: hsl(217, 12%, 63%);
+	height: 50px;
+	background-color: hsl(216, 12%, 8%);
 }
 
 footer a:visited {
-	color: hsl(217, 12%, 63%)
+	color: hsl(217, 12%, 63%);
 }
