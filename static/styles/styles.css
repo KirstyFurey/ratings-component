@@ -11,6 +11,10 @@ p {
 	font-size: 15px;
 }
 
+button {
+	all: unset;
+}
+
 .component-container {
 	display: flex;
 	justify-content: center;
@@ -37,21 +41,35 @@ p {
 
 .statement {
 	color: hsl(217, 12%, 63%);
+	line-height: 22px;
 }
 
 .rating-numbers {
 	display: flex;
+	justify-content: space-between;
 }
 
 .numbers {
 	background-color:  hsl(213, 19%, 22%);
-	margin: 10px 10px 10px 0px;
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	border-radius: 50%;
-	line-height: 50px;
+	line-height: 60px;
 	text-align: center;
 	color: hsl(217, 12%, 63%);
+	margin: 20px 0px;
+}
+
+.submit {
+	background-color: hsl(25, 97%, 53%);
+	border-radius: 30px;
+	height: 50px;
+	width: 350px;
+	color: white;
+	text-align: center;
+	margin: 20px 0px 10px 0px;
+	letter-spacing: 0.2em;
+	font-weight: 700;
 }
 /*
 .thanks {
