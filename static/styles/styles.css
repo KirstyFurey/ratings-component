@@ -1,3 +1,53 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	background-color: hsl(216, 12%, 8%);
+	font-family: 'Overpass', sans-serif;
+	height: 100vh;
+}
+
+p {
+	font-size: 15px;
+}
+
+.component-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ratings-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	color: white;
+}
+
+.statement {
+	color: hsl(217, 12%, 63%);
+}
+/*
+.thanks {
+	display: none;
+}
+*/
+.you-selected {
+	color: hsl(25, 97%, 53%);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	color: hsl(217, 12%, 63%)
+}
+
+footer a:visited {
+	color: hsl(217, 12%, 63%)
+}
