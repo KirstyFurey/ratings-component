@@ -139,3 +139,35 @@ footer {
 footer a:visited {
 	color: hsl(217, 12%, 63%);
 }
+
+@media only screen and (max-width: 450px) {
+	.rate-contain {
+		width: 300px
+	}
+	
+	.content-contain {
+		width: 240px;
+	}
+	
+	.submit {
+		width: 240px;
+	}
+	
+	.numbers {
+		height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        line-height: 40px;
+	}
+	
+	.star {
+		height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        line-height: 50px;
+	}
+}
+
+
+
+
