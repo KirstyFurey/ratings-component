@@ -8,3 +8,4 @@ submit.onclick = () => {
 	rate.style.display = 'none';
 	thanks.style.display = 'block';
 }
+
